@@ -1,0 +1,311 @@
+/* .news-flex-box {
+    flex: 0 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  
+  .news-box {
+    flex: 1;
+  }
+  
+  .update-box {
+    flex: 1;
+  }
+  
+  .miniroom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box-title {
+    font-family: "KOTRA_BOLD-Bold";
+    border-bottom: 1px solid grey;
+    color: #3b87ab;
+  }
+  
+  .news-row {
+    display: flex;
+    font-size: 0.85rem;
+    margin: 3px 0;
+  }
+  
+  .news-category {
+    padding: 0 6px;
+    margin-right: 6px;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .category-pic {
+    background-color: #f15f5f;
+  }
+  
+  .category-post {
+    background-color: #617dc1;
+  }
+  
+  .menu-row {
+    display: flex;
+    border-bottom: 1px dashed grey;
+    margin: 3px 0;
+  }
+  
+  .menu-item {
+    flex: 1;
+  }
+  
+  .menu-num {
+    font-family: "NeoDunggeunmo";
+    padding-left: 6px;
+    color: #003399;
+  } */
+  
+  
+  .miniroom-gif-box {
+    border: 1px solid #d6d6d6;
+    width:520px;
+    height:280px;
+  }
+  .miniroom-gif-box img{
+    width:520px;
+    height:280px;
+  }
+  .box-title {
+    font-size: 12px;
+    font-family: "KOTRA_BOLD-Bold";
+    color: #268ab8;
+    padding-bottom: 5px;
+  }
+  .say ul{
+    display: flex;
+  }
+
+
+
+
+  
+
+  body {
+    background-color: #a3a3a3;
+    /* background-image: url("../static/images/pattern.png"); */
+    background-size: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* font-size: 16px; */
+  
+    /** 기본 폰트 설정 */
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  /*노란색 틀*/
+  .bookcover {
+    background-color: rgb(252, 199, 102);
+    border-radius: 9px;
+    border: 1px solid #738186;
+    width: 960px;
+    height: 660px;
+    margin: 100px auto;
+    position: relative;
+  }
+  /*흰색 선*/
+  .bookdot {
+    border-radius: 9px;
+    border: 2px dashed #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  /*안쪽 회색배경*/
+  .page {
+    background-color: #eeeeee;
+    border-radius: 9px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    padding: 15px;
+  }
+  /*프로필 박스 & 투데이*/
+  .profile-container {
+    flex: 0.4;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  /*미니룸 박스*/
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  /*메뉴바 박스*/
+  .menu-container {
+    flex: 0.15;
+  }
+  
+  .header {
+    flex: 0.1;
+  }
+  
+  .box {
+    background-color: white;
+    flex: 3;
+    border-radius: 10px;
+    border: 1px solid #cdcdcd;
+  }
+  
+  .content-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content-title-name {
+    flex: 1;
+  }
+  
+  .profile-title {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .color-orange {
+    color: orange
+  }
+  
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .profile-image {
+    flex: none;
+  }
+  
+  .profile-image-img {
+    width: 100%;
+    height: 100%;
+  }
+  .border1{
+    border-bottom: 1px dashed #ddd;
+    padding-top: 10px;
+  }
+  
+  .profile-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    line-height:3;
+    flex: 1;
+    font-size: 10px;
+  }
+  
+  /*프로필 이름 아래*/
+  .profile-use{
+    flex: 0;
+  }
+  .profile-use span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #003399;
+  }
+  .profile-use p{
+    color: orange;
+    font-size: 12px;
+  }
+  .border2{
+    border-top: 1px dashed #ddd;
+    padding-bottom: 5px;
+  }
+  .content-box{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: auto;
+  }
+  
+
+  /*메뉴바*/
+  .menu-button button{
+    width: 80px;
+    height: 50px;
+    text-align: left;
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+    font-family: "NeoDunggeunmo";
+    padding: 0.4rem;
+    background-color: rgb(252, 187, 89);
+    color:#000;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+
+  .menu-button:first-child{
+    margin-top: 3rem;
+  }
+
+  a button:hover {
+    background-color:#fff;
+    color:  rgb(252, 187, 89);
+  }
+
+  .profile-dropdown{
+    flex: 0;
+    border: 1px solid #c9d4da;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    position: relative;
+  }
+
+  .triangle-down{
+    width: 0;
+    height: 0;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 5px solid #838383;
+  }
+
+  .dropdown-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .profile-dropdown:hover > .dropdown-content{
+    display: block;
+  }
+
+  .dropdown-content > a{
+    display: block;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .dropdown-content > a:hover{
+    background-color: #f1f1f1;
+  }
