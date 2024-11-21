@@ -6,7 +6,7 @@
   display: none;
 }
 body {
-  background-image: url(/img/main_visual_bg\ copy-1.jpg);
+  background-image: url(../img/main_visual_bg\ copy-1.jpg);
   background-size: 100px;
   position: fixed;
   left: 0;
@@ -550,7 +550,7 @@ a button:hover {
 }
 .view-img{
   font-size: 0px;
-  background-image: url(img/jang1.jpg);
+  background-image: url(../img/jang2.jpg);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -688,7 +688,7 @@ a button:hover {
   }
   /* 배경 */
 body {
-  background-image: url(/img/main_visual_bg\ copy-1.jpg);
+  background-image: url(../img/main_visual_bg\ copy-1.jpg);
   background-size: 100px;
   position: fixed;
   left: 0;
@@ -1230,7 +1230,7 @@ a button:hover {
 }
 .view-img{
   font-size: 0px;
-  background-image: url(img/jang1.jpg);
+  background-image: url(../img/jang2.jpg);
   background-repeat: no-repeat;
   width: 300px;
   height: 300px;
@@ -1365,7 +1365,7 @@ a button:hover {
 
   /* 배경 */
   body{
-    background-image: url(img/main_visual_bg\ copy-1.jpg);
+    background-image: url(../img/main_visual_bg\ copy-1.jpg);
     background-size: 100px;
   }
   #big-box {
@@ -1709,7 +1709,7 @@ text-align: center;
 }
 .view-img{
   font-size: 0px;
-  background-image: url(img/jang1.jpg);
+  background-image: url(../img/jang2.jpg);
   background-repeat: no-repeat;
   width: 300px;
   height: 250px;
