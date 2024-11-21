@@ -1,12 +1,11 @@
-/*---------pc버전----------*/
+/*-------------------------pc버전-----------------------------*/
 @media(min-width:1200px){
 
 /* 배경 */
-.none , .none-1{
+.none,.none-1-1{
   display: none;
 }
 body {
-  /* background-color: #a3a3a3; */
   background-image: url(../img/main_visual_bg\ copy-1.jpg);
   background-size: 100px;
   position: fixed;
@@ -22,8 +21,9 @@ body {
   border: 1px solid #738186;
   width: 1200px;
   height: 750px;
-  margin: 50px auto;
+  margin: 50px;
   position: relative;
+  margin: 50px auto;
 }
 /*흰색 선*/
 .bookdot {
@@ -65,6 +65,8 @@ body {
 .menu-container {
   flex: 0.15;
 }
+/* ---------------------------------------------- */
+
 /* 링 누끼 */
 .ring-1 img{
   width: 75px;
@@ -73,7 +75,7 @@ body {
 .ring-1{
   position: absolute;
   top:19%;
-  left: 23%;
+  left: 21%;
 }
 .ring-2 img{
   width: 75px;
@@ -82,7 +84,7 @@ body {
 .ring-2{
   position: absolute;
   top:25%;
-  left: 23%;
+  left: 21%;
 }
 .ring-3 img{
   width: 75px;
@@ -91,7 +93,7 @@ body {
 .ring-3{
   position: absolute;
   bottom:25%;
-  left: 23%;
+  left: 21%;
 }
 .ring-4 img{
   width: 75px;
@@ -100,7 +102,7 @@ body {
 .ring-4{
   position: absolute;
   bottom: 19%;
-  left: 23%;
+  left: 21%;
 }
 .header {
   flex: 0.1;
@@ -124,6 +126,8 @@ body {
   flex: 1;
   padding-bottom: 5px;
 }
+
+/* ----------------프로필------------------------- */
 
 /* 프로필 투데이 토탈 */
 .profile-title {
@@ -204,6 +208,7 @@ body {
   overflow: auto;
 }
 
+/* ---------------------메뉴바---------------------- */
 
 /*메뉴바*/
 .menu-button button{
@@ -231,6 +236,8 @@ a button:hover {
   background-color:#fff;
   color:  rgb(252, 187, 89);
 }
+
+/* -------------------------------------------------- */
 
 /* 프로필 파도타기 */
 .profile-dropdown{
@@ -272,6 +279,7 @@ a button:hover {
   background-color: #f1f1f1;
 }
 
+/* ---------------------미니룸----------------------- */
 
 /* 미니룸 박스 */
 .miniroom-gif-box {
@@ -285,7 +293,7 @@ a button:hover {
   height:280px;
 }
 /* 미니룸 글자 */
-.box-title ul{
+.box-title > ul{
   display: flex;
   justify-content: space-between;
 }
@@ -299,8 +307,10 @@ a button:hover {
   color: #268ab8;
   padding-bottom: 5px;
 }
+/* ---------------------프렌드----------------------- */
+
 /* 프렌드 세이 박스 */
-.say ul{
+.say > ul{
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -333,6 +343,7 @@ a button:hover {
   height: 24px;
   line-height: 24px;
 }
+
 /* 친구들 생각*/
 .friend{
   font-size: 12.5px;
@@ -347,74 +358,67 @@ a button:hover {
   color:#738186;
   font-size: 11px;
 }
+/* ----------------------스킬---------------------- */
+
 /* 스킬 */
-#big-box{
-  position: relative;
-}
-.box-skill{
-  position: absolute;
-  flex: 1;
-  margin-left: 100rem;
+.none-1 > ul{
   display: flex;
-  flex-direction: column;
-  top: 0px;
-  width:250px;
-  height:330px;
-  background-color: #fff;
-  border: 1px solid #444444;
+  width:100%;
 }
-.box-skill ul{
-  display: flex;
-  width:250px;
-}
-.box-skill h1{
-  font-size: 25px;
-  background-color: #fffbe7;
-  height:50px;
-  width:250px;
-  text-align: center;
-  line-height: 50px;
-  border-bottom: 1px solid #444444;
+.none-1 h1{
+  font-size: 40px;
+  height:40px;
+  line-height: 30px;
   color: #666666;
+  padding-top: 120px;
+  padding-left: 30px;
 }
-.box-skill li{
-  width:100px;
+.none-1 li{
+  width:20%;
   height: 40px;
   line-height: 40px;
   font-size: 17px;
-  padding-left: 3px;
+  padding-left: 30px;
 }
+
 /* 스킬 막대기 */
-.graph{
-  width:160px;
-  height:22px;
+.one{
+  width:100%;
+  height:40px;
   background-color:#ddd;
   margin: 12px;
 }
-.graph div{
+.one div{
   height:100%;
   text-align:center;
   line-height:40px;
 }
-.stick-pink{
-  width:70%;
-  background-color: pink;}
-.stick-blue{
-  width:65%;
-  background-color:rgb(109, 158, 250)}
-.stick-yellow{
-  width:55%;
-  background-color:rgb(255, 224, 140)}
-.stick-red{
-  width:80%;
-  background-color:rgb(250, 148, 148)}
-.stick-green{
-  width:75%;
-  background-color:rgb(98, 209, 113)}
-.stick-purple{
-  width:70%;
-  background-color:rgb(134, 76, 134)}
+.one-pink{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-blue{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-yellow{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-red{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-green{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-purple{
+  width:0%;
+  color:#474747;
+  background-color:#fbc15d}
 
+/* ----------------------안씀---------------------- */
 /* 음악 박스 */
 .play{
   width:250px;
@@ -423,8 +427,8 @@ a button:hover {
   margin-top: 15px;
   border: 1px solid #444444;
   position: absolute;
-  margin-left: 100rem;
-  top:320px;
+  top: -2%;
+  left: 40%;
 }
 .play-mu{
   width: 250px;
@@ -437,15 +441,15 @@ a button:hover {
   color:#363636;
 }
 /* 음악 아이콘 */
-.play ul{
+.play > ul{
   display: flex;
 }
-.play ul li i{
+.play > ul li i{
   font-size: 16px;
   padding: 5px;
   margin-top: 8px;
 }
-.play li{
+.play > li{
   height: 20px;
   text-align: center;
   line-height: 25px;
@@ -473,6 +477,177 @@ a button:hover {
   height: 25px;
   width: 100px;
 }
+/* -------------------------------------------- */
+
+/* 포트폴리오1 페이지 */
+.con2-portfolio h3{
+  padding-top: 130px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con2-canmoa li{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box1{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box2{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box3{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-mun{
+  display: flex;
+  gap:45px;
+  justify-content: center;
+  margin: 20px;
+}
+.con2-mun a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #363636;
+  padding: 15px;
+}
+/* .con2-1 > ul{
+  display: flex;
+} */
+.con2-canmoa{
+  width:660px;
+}
+.con2-canmoa > li{
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 40px;
+  padding-left: 25px;
+}
+.con2-canmoa h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.con2-canmoa span{
+  font-size: 20px;
+}
+.con2-canmoa p{
+  padding-bottom: 15px;
+}
+.con2-canmoa li:nth-child(2){
+  display: none;
+}
+.con2-canmoa li:nth-child(3){
+  display: none;
+}
+.view-open{
+  border: 1px solid rgb(252, 187, 89);
+  border-radius: 5px;
+  padding: 10px;
+}
+.view-img{
+  font-size: 0px;
+  background-image: url(/img/jang1.jpg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+/* 마우스 호버 */
+.view-open:hover{
+  background-color:rgb(224, 146, 0);
+  color: #fff;
+}
+.con2-mun a:hover{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+}
+/* 제이쿼리 css */
+.pofo{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+  padding: 15px;
+}
+/* -------------------------------------------- */
+
+/* 포폴 2 일러스트 */
+.con3-portfolio2 h3{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con3-1{
+  list-style: none;
+  width:95%;
+  display: flex;
+  gap:50px 10px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.con3-1 > li{
+  width:calc(100% / 2 - 10px);
+  height:200px;
+  background-color:#ccc;
+}
+.con3-1 > li:nth-child(2n+1){
+  margin-top: 120px;
+}
+.con3-1 li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 마우스 호버 */
+.con3-1 > li:hover img{
+  transform: scale(1.2);
+}
+
+/* --------------------------------------------- */
+
+/* contact */
+.con4-contact h3{
+  padding-top: 130px;
+  padding-bottom: 50px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con4-contact ul{
+  display: flex;
+  gap:30px;
+}
+.con4-contact li > img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.con4-contact li > p{
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.con4-contact li > span{
+  color:#444444;
+}
+.font-size-gr{
+  padding: 20px 0px 0px 50px;
+  line-height: 30px;
+  width: 328px;
+  height: 150px;
+  color: #6e6e6e;
+  background-color:rgb(255, 201, 99);
+  border-radius: 50px 0px 0px 0px;
+  margin-top: 20px;
+}
+
+
+
+
 
 
 }
@@ -506,9 +681,9 @@ a button:hover {
 
 
 
-/*--------태블릿 버전---------*/
+/*------------------------태블릿 버전-------------------------*/
 @media(min-width:800px) and (max-width:1200px){
-  .none ,.none-1{
+  .none,.none-1-1{
     display: none;
   }
   /* 배경 */
@@ -526,9 +701,9 @@ body {
   background-color: rgb(252, 199, 102);
   border-radius: 9px;
   border: 1px solid #738186;
-  width: 950px;
+  width: 1100px;
   height: 750px;
-  margin: 30px;
+  margin: 50px auto;
   position: relative;
 }
 /*흰색 선*/
@@ -571,6 +746,8 @@ body {
 .menu-container {
   flex: 0.15;
 }
+/* -------------------------------------- */
+
 /* 링 누끼 */
 .ring-1 img{
   width: 72px;
@@ -579,7 +756,7 @@ body {
 .ring-1{
   position: absolute;
   top:18%;
-  left: 19.5%;
+  left: 16%;
 }
 .ring-2 img{
   width: 72px;
@@ -588,7 +765,7 @@ body {
 .ring-2{
   position: absolute;
   top:24%;
-  left: 19.5%;
+  left: 16%;
 }
 .ring-3 img{
   width: 72px;
@@ -597,7 +774,7 @@ body {
 .ring-3{
   position: absolute;
   bottom:25%;
-  left: 19.5%;
+  left: 16%;
 }
 .ring-4 img{
   width: 72px;
@@ -606,11 +783,12 @@ body {
 .ring-4{
   position: absolute;
   bottom: 19%;
-  left: 19.5%;
+  left: 16%;
 }
 .header {
   flex: 0.1;
 }
+/* -------------------------------------- */
 
 /* 안에 큰 회색 박스 */
 .box {
@@ -630,6 +808,7 @@ body {
   flex: 1;
   padding-bottom: 5px;
 }
+/* --------------------프로필--------------- */
 
 /* 프로필 투데이 토탈 */
 .profile-title {
@@ -710,6 +889,7 @@ body {
   overflow: auto;
 }
 
+/* --------------------메뉴바--------------- */
 
 /*메뉴바*/
 .menu-button button{
@@ -738,6 +918,7 @@ a button:hover {
   color:  rgb(252, 187, 89);
 }
 
+/* --------------------프로필--------------- */
 /* 프로필 파도타기 */
 .profile-dropdown{
   flex: 0;
@@ -778,16 +959,17 @@ a button:hover {
 .dropdown-content > a:hover{
   background-color: #f1f1f1;
 }
+/* --------------------미니룸------------------ */
 
 /* 미니룸 박스 */
 .miniroom-gif-box {
   border: 1px solid #d6d6d6;
-  width:550px;
+  width:600px;
   height:280px;
 }
 /* 미니룸 사진 */
 .miniroom-gif-box img{
-  width:550px;
+  width:600px;
   height:280px;
 }
 /* 미니룸 글자 */
@@ -805,8 +987,10 @@ a button:hover {
   color: #268ab8;
   padding-bottom: 5px;
 }
+/* --------------------프렌드------------------ */
+
 /* 프렌드 세이 박스 */
-.say ul{
+.say > ul{
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -854,72 +1038,66 @@ a button:hover {
   font-size: 11px;
 }
 /* 스킬 */
-#big-box{
-  position: relative;
-}
-.box-skill{
-  position: absolute;
-  flex: 1;
-  margin-left: 62rem;
+.none-1 > ul{
   display: flex;
-  flex-direction: column;
-  top: 0px;
-  width:180px;
-  height:330px;
-  background-color: #fff;
-  border: 1px solid #444444;
-}
-.box-skill ul{
-  display: flex;
-  width:180px;
-}
-.box-skill h1{
-  font-size: 20px;
-  background-color: #fffbe7;
-  height:50px;
-  width:180px;
-  text-align: center;
-  line-height: 50px;
-  border-bottom: 1px solid #444444;
-  color: #666666;
-}
-.box-skill li{
   width:100%;
+}
+.none-1 h1{
+  font-size: 40px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+.none-1 li{
+  width:20%;
   height: 40px;
   line-height: 40px;
-  font-size: 15px;
-  padding-left: 3px;
+  font-size: 17px;
+  padding-left: 30px;
 }
+
+/* --------------------스킬------------------ */
+
 /* 스킬 막대기 */
-.graph{
-  width:160px;
-  height:22px;
+.one{
+  width:100%;
+  height:40px;
   background-color:#ddd;
   margin: 12px;
 }
-.graph div{
+.one div{
   height:100%;
   text-align:center;
   line-height:40px;
 }
-.stick-pink{
-  width:70%;
-  background-color: pink;}
-.stick-blue{
-  width:65%;
-  background-color:rgb(109, 158, 250)}
-.stick-yellow{
-  width:55%;
-  background-color:rgb(255, 224, 140)}
-.stick-red{
-  width:80%;
-  background-color:rgb(250, 148, 148)}
-.stick-green{
-  width:75%;
-  background-color:rgb(98, 209, 113)}
-.stick-purple{
-  width:70%;
-  background-color:rgb(134, 76, 134)}
+.one-pink{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-blue{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-yellow{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-red{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-green{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-purple{
+  width:0%;
+  color:#474747;
+  background-color:#fbc15d}
+
+  /* --------------------안씀------------------- */
 
 /* 음악 박스 */
 .play{
@@ -929,8 +1107,8 @@ a button:hover {
   margin-top: 15px;
   border: 1px solid #444444;
   position: absolute;
-  margin-left: 62rem;
-  top:320px;
+  left:90%;
+  top:39%;
 }
 .play-mu{
   width: 180px;
@@ -943,15 +1121,15 @@ a button:hover {
   color:#363636;
 }
 /* 음악 아이콘 */
-.play ul{
+.play > ul{
   display: flex;
 }
-.play ul li i{
+.play > ul li i{
   font-size: 13px;
   padding: 5px;
   margin-top: 8px;
 }
-.play li{
+.play > li{
   height: 20px;
   text-align: center;
   line-height: 25px;
@@ -979,6 +1157,183 @@ a button:hover {
   height: 25px;
   width: 100px;
 }
+/* --------------------포폴------------------ */
+
+/* 포트폴리오1 페이지 */
+.con2-portfolio h3{
+  padding-top: 130px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con2-canmoa li{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box1{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box2{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box3{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-mun{
+  display: flex;
+  gap:45px;
+  justify-content: center;
+  margin: 20px;
+}
+.con2-mun a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #363636;
+  padding: 15px;
+}
+/* .con2-1 > ul{
+  display: flex;
+} */
+.con2-canmoa{
+  width:660px;
+}
+.con2-canmoa > li{
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 40px;
+  padding-left: 25px;
+}
+.con2-canmoa h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.con2-canmoa span{
+  font-size: 20px;
+}
+.con2-canmoa p{
+  padding-bottom: 15px;
+}
+.con2-canmoa li:nth-child(2){
+  display: none;
+}
+.con2-canmoa li:nth-child(3){
+  display: none;
+}
+.view-open{
+  border: 1px solid rgb(252, 187, 89);
+  border-radius: 5px;
+  padding: 10px;
+}
+.view-img{
+  font-size: 0px;
+  background-image: url(/img/jang1.jpg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+/* 마우스 호버 */
+.view-open:hover{
+  background-color:rgb(224, 146, 0);
+  color: #fff;
+}
+.con2-mun a:hover{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+}
+/* 제이쿼리 css */
+.pofo{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+  padding: 15px;
+}
+/* -------------------------------------------- */
+
+/* 포폴 2 일러스트 */
+.con3-portfolio2 h3{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con3-1{
+  list-style: none;
+  width:95%;
+  display: flex;
+  gap:50px 10px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.con3-1 > li{
+  width:calc(100% / 2 - 10px);
+  height:200px;
+  background-color:#ccc;
+}
+.con3-1 > li:nth-child(2n+1){
+  margin-top: 120px;
+}
+.con3-1 li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 마우스 호버 */
+.con3-1 > li:hover img{
+  transform: scale(1.2);
+}
+
+/* --------------------------------------------- */
+
+/* contact */
+.con4-contact h3{
+  padding-top: 130px;
+  padding-bottom: 50px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con4-contact ul{
+  display: flex;
+  gap:30px;
+}
+.con4-contact li > img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.con4-contact li > p{
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.con4-contact li > span{
+  color:#444444;
+}
+.font-size-gr{
+  padding: 20px 0px 0px 50px;
+  line-height: 30px;
+  width: 328px;
+  height: 150px;
+  color: #6e6e6e;
+  background-color:rgb(255, 201, 99);
+  border-radius: 50px 0px 0px 0px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -991,7 +1346,22 @@ a button:hover {
 
 
 
+
 @media(max-width:800px){
+
+  /* 모바일에서 안보이게 */
+.menu-button{
+  display: none;
+}
+.box-skill{
+  display: none;
+}
+.play{
+  display: none;
+}
+.content-title-name{
+  display: none;
+}
 
   /* 배경 */
   body{
@@ -1010,7 +1380,7 @@ a button:hover {
     background-color: rgb(252, 199, 102);
     border-radius: 9px;
     border: 1px solid #738186;
-    height: 3600px;
+    height: 5550px;
     position: relative;
   }
   /*흰색 선*/
@@ -1034,52 +1404,32 @@ a button:hover {
     right: 10px;
     bottom: 10px;
     padding: 15px;
-    overflow:scroll;
-    z-index: 900;
+    flex-direction: column;
+    /* overflow:scroll;
+    z-index: 900; */
   }
-/*프로필 (왼쪽) 박스*/
-.profile-container {
-  flex: 0.4;
-  margin-right: 1rem;
-  flex-direction: column;
-}
-/*미니룸 (중앙) 박스*/
-.content-container {
-  flex: 1;
-  flex-direction: column;
-}
-/* 모바일버전 홈 버튼 */
+/* 로고 */
 .none{
-  background-color: #fff;
-  padding: 20px 60px 0px;
-  background-image: url(../img/main_visual_bg\ copy-1.jpg);
-  background-size: 100px;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
 }
-.none button{
-  width: 80px;
-  height: 50px;
-  margin: auto;
-  font-size: 0.9rem;
-  font-family: 'Interop';
-  padding: 0.4rem;
-  background-color: rgb(252, 187, 89);
-  color:#000;
-  border-radius:  5px 5px 0px 0px;
-  border: 1px solid grey;
+.none i{
+  font-size: 30px;
+  border: 1px solid #ddd;
+  background-color: #c0c0c0;
+  color: #ddd;
+  padding: 9px 11px;
+  position: absolute;
+  right: 28px;
+  top:828px;
+  position: fixed;
 }
-
-/* 메뉴바 호버 */
-a button:hover {
-  background-color:#fff;
-  color:  rgb(252, 187, 89);
-}
-
-
 
 /* 토탈 투데이*/
 .profile-title{
   font-size: 16px;
-  padding: 80px 0px 10px 0px;
+  padding: 50px 0px 10px 0px;
   text-align: center;
 }
 .color-orange{
@@ -1125,13 +1475,14 @@ a button:hover {
 .profile-use p{
   display: none;
 }
-.profile-use span{
+.none-1-1 > h4{
   font-size: 20px;
   font-weight: bold;
   color:#003399;
-  position: absolute;
-  top:350px;
-  left: 190px;
+  text-align: center;
+}
+.profile-use span{
+  display: none;
 }
 /* 프로필 파도타기 */
 .profile-dropdown{
@@ -1179,13 +1530,6 @@ a button:hover {
   display: none;
 }
 
-/*로고 맨 위로 올리기*/
-.content-title-name{
-  position:absolute;
-  padding: 15px 100px;
-  top:0;
-  font-size: 35px;
-}
 /*미니룸*/
 .box-title ul{
   display: flex;
@@ -1202,7 +1546,7 @@ a button:hover {
   width: 100%;
 }
 /* 프렌드 세이 박스 */
-.say ul{
+.say > ul{
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -1250,21 +1594,12 @@ a button:hover {
   color:#738186;
   font-size: 11px;
 }
-
-/* 모바일에서 안보이게 */
-.menu-button{
-  display: none;
-}
-.box-skill{
-  display: none;
-}
-.play{
-  display: none;
-}
+/* -------------스킬-------------- */
 
 /* 스킬 */
 .none-1{
 padding-top: 25px;
+text-align: center;
 }
 .none-1 ul{
   display: flex;
@@ -1275,47 +1610,184 @@ padding-top: 25px;
   height:40px;
   line-height: 30px;
   color: #666666;
+  padding-bottom: 30px;
 }
 .none-1 li{
   width:25%;
   height: 30px;
   line-height: 30px;
-  font-size: 13px;
-  padding-left: 5px;
+  font-size: 15px;
 }
 /* 스킬 막대기 */
 .one{
-  width:300px;
-  height:5px;
+  width:100%;
+  height:20px;
   background-color:#ddd;
-  margin: 15px;
+  margin: 12px;
 }
 .one div{
   height:100%;
   text-align:center;
-  line-height:40px;
+  line-height:20px;
 }
 .one-pink{
   width:70%;
-  background-color: pink;}
+  color:#5f5f5f;
+  background-color:#fbc15d}
 .one-blue{
   width:65%;
-  background-color:rgb(109, 158, 250)}
+  color:#5f5f5f;
+  background-color:#ffc59e}
 .one-yellow{
   width:55%;
-  background-color:rgb(255, 224, 140)}
+  color:#5f5f5f;
+  background-color:#ffc59e}
 .one-red{
   width:80%;
-  background-color:rgb(250, 148, 148)}
+  color:#5f5f5f;
+  background-color:#fbc15d}
 .one-green{
   width:75%;
-  background-color:rgb(98, 209, 113)}
+  color:#5f5f5f;
+  background-color:#fbc15d}
 .one-purple{
   width:70%;
-  background-color:rgb(134, 76, 134)}
+  color:#474747;
+  background-color:#fbc15d}
 
+/* 포트폴리오1 페이지 */
+.con2-portfolio{
+  text-align: center;
+}
+.con2-portfolio h3{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.con2-mun{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.con2-mun a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #363636;
+  padding: 15px;
+}
+.con2-canmoa{
+  padding-top: 50px;
+}
+.con2-canmoa > li{
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 40px;
+}
+.con2-1{
+  margin: 10px;
+}
+.con2-canmoa h4{
+  font-size: 20px;
+}
+.con2-canmoa p{
+  font-size: 13px;
+}
+.con2-canmoa li:nth-child(2){
+  display: none;
+}
+.con2-canmoa li:nth-child(3){
+  display: none;
+}
+.view-open{
+  border: 1px solid rgb(252, 187, 89);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.view-img{
+  font-size: 0px;
+  background-image: url(/img/jang1.jpg);
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 250px;
+  margin: 50px auto;
+}
+/* 마우스 호버 */
+.view-open:hover{
+  background-color:rgb(224, 146, 0);
+  color: #fff;
+}
+.con2-mun a:hover{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+}
 
+/* 포폴 2 일러스트 */
+.con3-portfolio2{
+  text-align: center;
+}
+.con3-portfolio2 h3{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-bottom: 30px;
+}
+.con3-1 > li{
+  background-color:#ccc;
+  width: 90%;
+  height: 300px;
+  margin: 50px auto;
+}
+/* 마우스 호버 */
+.con3-1 > li:hover img{
+  transform: scale(1.1);
+}
 
+/* contact */
+
+.con4-contact h3{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-top: 30px;
+}
+.con4-contact li > img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 50px auto;
+}
+.con4-contact li > p{
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.con4-contact li > span{
+  color:#444444;
+}
+.con4-contact li{
+  text-align: center;
+}
+.font-size-gr{
+  padding: 20px 0px 0px 50px;
+  line-height: 30px;
+  width: 93%;
+  height: 150px;
+  color: #6e6e6e;
+  background-color:rgb(255, 201, 99);
+  border-radius: 50px 0px 0px 0px;
+  margin-top: 20px;
+}
+.con3-1 li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 
